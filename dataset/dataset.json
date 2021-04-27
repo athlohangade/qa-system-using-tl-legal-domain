@@ -1,0 +1,110 @@
+{
+    "doccnt": 2,
+    "data": [
+        {
+            "title": "Technical Education Act, 1987.pdf",
+            "paragraphs": [
+                {
+                    "context": "Power to supersede the Council.- (1) If the Central Government is of the opinion that the Council is unable to perform, or has persistently made default in the performance of, the duty imposed on it by or under this Act or has exceeded or abused its powers, or has wilfully or without sufficient cause, failed to comply with any direction issued by the Central Government under section 20, the Central Government may, by notification in the Official Gazette, supersede the Council for such period as may be specified in the notification: Provided that before issuing a notification under this sub-section, the Central Government shall give a reasonable time to the Council to show cause why it should not be superseded and shall consider the explanation and objections, if any, of the Council. (2) Upon the publication of a notification under sub-section (1) superseding the Council,-  (a) all the members of the Council shall, notwithstanding that their term of office had not expired, as from the date of supersession, vacate their offices as such members; (b) all the powers and duties which may, by or under the provisions of this Act, be exercised or performed by or on behalf of the Council shall, during the period of supersession, be exercised and performed by such person or persons as the Central Government may direct; (c) all property vested in the Council shall, during the period of supersession, vest in the Central Government. (3) On the expiration of the period of supersession specified in the notification issued under sub-section (1), the Central Government may-  (a) extend the period of supersession for such further period as it may consider necessary; or (b) reconstitute the Council in the manner provided in section 3. ",
+                    "qas": [
+                        {
+                            "question": "What shall the members of the Council do notwithstanding that their term of office had not expired as from the date of supersession?",
+                            "answer": [
+                                {
+                                    "answer": "vacate their offices as such members",
+                                    "ans_startindex": 237,
+                                    "ans_endindex": 243
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who may supersede the Council by notification in the Official Gazette?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 97,
+                                    "ans_endindex": 99
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What may the Central Government do if the Council is unable to perform its duties?",
+                            "answer": [
+                                {
+                                    "answer": "supersede the council",
+                                    "ans_startindex": 111,
+                                    "ans_endindex": 115
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Power to make rules.- (1) The Central Government may, by notification in the Official Gazette, make rules to carry out the purposes of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such rules may provide for all or any of the following matters, namely:-  (a) the procedure to be followed by the members in the discharge of their functions; (b) the inspection of technical institutions and Universities; (c) the form and manner in which the budget and reports are to be prepared by the Council; (d) the manner in which the accounts of the Council are to be maintained; and (e) any other matter which has to be, or may be, prescribed. ",
+                    "qas": [
+                        {
+                            "question": "What is one of the matters that the Central Government may make rules for?",
+                            "answer": [
+                                {
+                                    "answer": "the inspection of technical institutions and universities",
+                                    "ans_startindex": 105,
+                                    "ans_endindex": 111
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who may make rules to carry out the purposes of this Act?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 24,
+                                    "ans_endindex": 26
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Power to make regulations.- (1) The Council may, by notification in the Official Gazette, make regulations not inconsistent with the provisions of this Act, and the rules generally to carry out the purposes of this Act. (2) In particular, and without prejudice to the generality of the foregoing power, such regulations may provide for all or any of the following matters, namely:-  (a) regulating the meetings of the Council and the procedure for conducting business thereat; (b) the terms and conditions of service of the officers and employees of the Council; (c) regulating the meetings of the Executive Committee and the procedure for conducting business thereat; (d) the area of concern, the constitution, and powers and functions of the Board of Studies; (e) the region for which the Regional Committee be established and the constitution and functions of such Committee. ",
+                    "qas": [
+                        {
+                            "question": "Who may make regulations that are not inconsistent with the provisions of this Act?",
+                            "answer": [
+                                {
+                                    "answer": "the council",
+                                    "ans_startindex": 26,
+                                    "ans_endindex": 27
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the region for which the Regional Committee is established?",
+                            "answer": [
+                                {
+                                    "answer": "the region",
+                                    "ans_startindex": 172,
+                                    "ans_endindex": 173
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Rules and regulations to be laid before Parliament.- Every rule and every regulation made under this Act shall be laid, as soon as may be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may be comprised in one session or in two or more successive sessions, and if, before the expiry of the session immediately following the session or the successive sessions aforesaid, both Houses agree in making any modification in the rule or regulation or both Houses agree that the rule or regulation should not be made, the rule or regulation shall thereafter have effect only in such modified form or be of no effect, as the case may be; so, however, that any such modification or annulment shall be without prejudice to the validity of anything previously done under that rule or regulation. ",
+                    "qas": [
+                        {
+                            "question": "How many days shall a rule and regulation be laid before each House of Parliament?",
+                            "answer": [
+                                {
+                                    "answer": "thirty days",
+                                    "ans_startindex": 68,
+                                    "ans_endindex": 69
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
