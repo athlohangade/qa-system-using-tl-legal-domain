@@ -102,7 +102,9 @@ class TextProcessingAndContextCreation :
 
         contexts = []
         for i in range(len(text)) :
-            if (len(text[i].split()) > 10 and len(text[i].split()) <= 350) :
+            if (len(text[i].split()) < 20) :
+                continue
+            elif (len(text[i].split()) >= 20 and len(text[i].split()) <= 350) :
                 contexts.append(text[i])
             else :
                 temp = cls._get_contexts_greater_than_max_size(text[i])
@@ -116,10 +118,14 @@ class TextProcessingAndContextCreation :
 
         ROMAN_NUMERALS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', \
                           'xi', 'xii', 'xiii', 'xiv', 'xv', 'xvi', 'xvii', 'xviii', 'xix', 'xx', \
-                          'xxi', 'xxii', 'xxiii', 'xxiv', 'xxv', 'xxvi', 'xxvii', 'xxviii', 'xxix', 'xxx']
-        level_wise_regex = [r"\([0-9]+\)", r"\([a-z]\)", r"\((" + "|".join(ROMAN_NUMERALS) + r")\)" , r"\([A-Z]\)"]
+                          'xxi', 'xxii', 'xxiii', 'xxiv', 'xxv', 'xxvi', 'xxvii', 'xxviii', 'xxix', 'xxx' \
+                          'xxxi', 'xxxii', 'xxxiii', 'xxxiv', 'xxxv', 'xxxvi', 'xxxvii', 'xxxviii', 'xxxix', 'xl' \
+                          'xli', 'xlii', 'xliii', 'xliv', 'xlv', 'xlvi', 'xlvii', 'xlviii', 'xlix', 'l', \
+                          'li', 'lii', 'liii', 'liv', 'lv', 'lvi', 'lvii', 'lviii', 'lix', 'lx']
+
+        level_wise_regex = [r"\([0-9]+\)", r"\([a-z]{1,2}\)", r"\((" + "|".join(ROMAN_NUMERALS) + r")\)" , r"\([A-Z]\)"]
         punctuations = ",-.:;"
-        end_markers = "."
+        end_markers = ".;"
         current_index = 0
         regex_match_flag = 0
         max_context_length = 0
@@ -169,13 +175,14 @@ class TextProcessingAndContextCreation :
                             break
                         i -= 1
 
-            if len(contexts[-1]) <= 10 :
+            if len(contexts[-1]) < 20 :
                 del contexts[-1]
 
         return contexts
                         
 if __name__=="__main__" :
-    x = TextProcessingAndContextCreation.get_context_chunks("Sexual Harassment Act, 2013.pdf")
+    x = TextProcessingAndContextCreation.get_context_chunks("2020 - The Direct Tax Vivad se Vishwas Act, 2020.pdf")
+    # x = TextProcessingAndContextCreation.get_context_chunks("Sexual Harassment Act, 2013.pdf")
     # x = TextProcessingAndContextCreation.get_context_chunks("Advocates' Welfare Fund Act, 2001.pdf")
     if x :
         for i in x :
