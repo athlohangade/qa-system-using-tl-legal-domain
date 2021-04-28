@@ -5,20 +5,23 @@ import random
 import streamlit as st
 from Main import Main
 
-@st.cache(suppress_st_warning=True)
-def get_ques_and_context(doc_name) :
+@st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=False)
+def generate_questions(contexts) :
 
-    st.write("FUNCTION EXECUTED!!!!")
-    print("RAN")
-    # Here call the function to get the questions and contexts for those questions
-    # generated_questions_and_contexts = [['question1', 'context1'], ['question2', 'context2']]
-    generated_questions_and_contexts = Main.get_questions_and_contexts_given_the_doc(doc_name)
+    generated_questions_and_contexts = Main.get_questions_given_the_contexts(contexts)
     return generated_questions_and_contexts
 
-@st.cache(suppress_st_warning=True)
+
+@st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=False)
+def get_contexts(doc_name) :
+
+    contexts = Main.get_contexts_given_the_doc(doc_name)
+    return contexts
+
+
+@st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=False)
 def get_answers_for_questions(generated_questions_and_contexts) :
 
-    # answers = ["answer1", "answer2"]
     answers = Main.get_answer_given_the_question_and_context_list(generated_questions_and_contexts)
     return answers
 
@@ -37,37 +40,43 @@ if mode_of_operation == 0 :
     st.header("Choose a legal doc :")
     st.write(" ")
     legal_docs_names = os.listdir("./legal_docs/")
+    legal_docs_names = ["Select Act"] + legal_docs_names
     doc_name = st.selectbox("", [legal_doc.replace(".pdf", "") for legal_doc in legal_docs_names])
-    doc_name = doc_name + ".pdf"
-    # print("YOYOOYOYOOYYOYOYYO")
 
-    with st.spinner("Working...") :
+    if doc_name != "Select Act" :
 
-        # Here call the function to get the questions and contexts for those questions
-        generated_questions_and_contexts = get_ques_and_context(doc_name)
-        random.shuffle(generated_questions_and_contexts)
-        generated_questions_and_contexts = generated_questions_and_contexts[:10]
-        # Here call the function to get the answer, given the context and question
-        answers = get_answers_for_questions(generated_questions_and_contexts)
+        doc_name = "./legal_docs/" + doc_name + ".pdf"
+        contexts = get_contexts(doc_name)
 
-    # List the generated questions
-    st.header("List of generated questions :")
-    st.write(" ")
-    question_numbers = list(range(len(generated_questions_and_contexts)))
-    selected_question = st.selectbox("", question_numbers, \
-        format_func = lambda x: generated_questions_and_contexts[x][0])
+        st.write(" ")
+        if st.button("Generate more samples") :
+            random.shuffle(contexts)
 
-    # Print the selected question
-    st.header("Question :")
-    st.markdown("---\n" f"{generated_questions_and_contexts[selected_question][0]}\n\n" "---")
+        contexts = contexts[:3]
+        with st.spinner("Generating Questions...") :
+            generated_questions_and_contexts = generate_questions(contexts)
+        with st.spinner("Finding Answers...") :
+            answers = get_answers_for_questions(generated_questions_and_contexts)
 
-    # Print the context corresponding to that answer
-    st.header("Context :")
-    st.markdown("---\n" f"{generated_questions_and_contexts[selected_question][1]}\n\n" "---")
+        # List the generated questions
+        st.header("List of generated questions :")
+        st.write(" ")
+        question_numbers = list(range(len(generated_questions_and_contexts)))
+        selected_question = st.selectbox("", question_numbers, \
+            format_func = lambda x: generated_questions_and_contexts[x][0])
 
-    # Print the answer
-    st.header("Answer :")
-    st.markdown("---\n" f"{answers[selected_question]}\n\n" "---")
+        # Print the selected question
+        st.header("Question :")
+        st.markdown("---\n" f"{generated_questions_and_contexts[selected_question][0]}\n\n" "---")
+
+        # Print the context corresponding to that answer
+        st.header("Context :")
+        st.markdown("---\n" f"{generated_questions_and_contexts[selected_question][1]}\n\n" "---")
+
+        # Print the answer
+        st.header("Answer :")
+        st.markdown("---\n" f"{answers[selected_question]}\n\n" "---")
+
 
 elif mode_of_operation == 1 :
 
@@ -82,7 +91,7 @@ elif mode_of_operation == 1 :
     question = st.text_area("")
 
     st.write(" ")
-    if st.button("Generate questions and answers") :
+    if st.button("Generate answers") :
 
         with st.spinner("Working...") :
             # Here call the function to get the answer, given the context and question
