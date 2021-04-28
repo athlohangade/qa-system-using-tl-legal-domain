@@ -1,0 +1,920 @@
+{
+    "doccnt": 1,
+    "data": [
+        {
+            "title": "Anti-Hijacking Act, 2016.pdf",
+            "paragraphs": [
+                {
+                    "context": " An Act to give effect to the Convention for the Suppression of Unlawful Seizure of Aircraft and for matters connected therewith. WHEREAS a Convention for the Suppression of Unlawful Seizure of Aircraft was signed at The Hague on the 16th day of December, 1970; ANDWHEREASIndia acceded to the said Convention and enacted the Anti-Hijacking Act, 1982 (65 of 1982) to give effect to the provisions of the Convention; ANDWHEREAS India has signed the Protocol Supplementary to the Convention at Beijing on the 10th day of September, 2010 which deals with unlawful acts against Civil Aviation by new types of threats which require comprehensive amendments to the said Act; ANDWHEREAS it is considered expedient that the unlawful acts of seizure or exercise of control of aircraft which jeopardize safety of persons and property is a matter of great concern to be addressed effectively by making suitable provisions for giving effect to the Convention and the Protocol and for matters connected therewith. BE it enacted by Parliament in the Sixty-seventh Year of the Republic of India as follows:\u2013\u2013 ",
+                    "qas": [
+                        {
+                            "question": "What is an act to give effect to the Convention for the Suppression of Unlawful Seizure of Aircraft?",
+                            "answer": [
+                                {
+                                    "answer": "anti - hijacking act , 1982",
+                                    "ans_startindex": 325,
+                                    "ans_endindex": 348
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Where was the Convention for the Suppression of Unlawful Seizure of Aircraft signed?",
+                            "answer": [
+                                {
+                                    "answer": "the hague",
+                                    "ans_startindex": 217,
+                                    "ans_endindex": 225
+                                }
+                            ]
+                        },
+                        {
+                            "question": "An Act to give effect to what was signed at The Hague on the 16th day of December, 1970?",
+                            "answer": [
+                                {
+                                    "answer": "the convention for the suppression of unlawful seizure of aircraft",
+                                    "ans_startindex": 26,
+                                    "ans_endindex": 91
+                                }
+                            ]
+                        },
+                        {
+                            "question": "When was the Anti-Hijacking Act enacted?",
+                            "answer": [
+                                {
+                                    "answer": "1982",
+                                    "ans_startindex": 345,
+                                    "ans_endindex": 348
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Short title, extent, application and commencement.\u2013\u2013(1) This Act may be called the Anti- Hijacking Act, 2016. (2) It extends to the whole of India and, save as otherwise provided in this Act, it applies also to any offence thereunder committed outside India by any person. (3) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint. ",
+                    "qas": [
+                        {
+                            "question": "What year was the Anti- Hijacking Act passed?",
+                            "answer": [
+                                {
+                                    "answer": "2016",
+                                    "ans_startindex": 104,
+                                    "ans_endindex": 107
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What does the Anti- Hijacking Act apply to?",
+                            "answer": [
+                                {
+                                    "answer": "any offence thereunder committed outside india by any person",
+                                    "ans_startindex": 211,
+                                    "ans_endindex": 270
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who may appoint a date for the Anti- Hijacking Act, 2016 to come into effect?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 318,
+                                    "ans_endindex": 339
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Where is the Central Government notified of the Anti- Hijacking Act, 2016?",
+                            "answer": [
+                                {
+                                    "answer": "official gazette",
+                                    "ans_startindex": 369,
+                                    "ans_endindex": 384
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What does the Anti- Hijacking Act extend to?",
+                            "answer": [
+                                {
+                                    "answer": "the whole of india",
+                                    "ans_startindex": 128,
+                                    "ans_endindex": 145
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Definitions.\u2013\u2013 In this Act, unless the context otherwise requires,\u2013\u2013 (a) \"Agency\" means the National Investigation Agency constituted under section3 of the National Investigation Agency Act, 2008 (34 of 2008); (b) \"aircraft\" means any aircraft, whether or not registered in India, other than a military aircraft or an aircraft used in customs or police service; (c) \"aircraft registered in India\" means an aircraft which is for the time being registered in India; (d) \"Convention country\" means a country in which the Hague Convention is for the time being in force; (e) \"Hague Convention\" means the Convention for the Suppression of Unlawful Seizure of Aircraft signed at The Hague on the 16th day of December, 1970 and includes the Protocol Supplementary to the Convention signed at Beijing on the 10th day of September, 2010; (f) \"hostage\" means a passenger or a crew member of an aircraft or any security personnel on board the aircraft or a ground support staff involved in the maintenance of the aircraft, who is unlawfully seized or detained without his consent, or with his consent obtained by fraud or duress, by an individual or by a group of persons, during the transit of an aircraft or when it is stationed at an airport, with an intention to secure any demand or fulfilment of any condition made by such individual or such group of persons; (g) \"military aircraft\" means an aircraft of the naval, military, air force or any other armed forces of any country and includes every aircraft commanded for the time being by a person in any such force detailed for the purpose; (h) \"notification\" means a notification published in the Official Gazette; (i) \"security personnel\" means security personnel deployed by the Central Government or appointed by any agency authorised by that Government to ensure security of civil aviation against acts of unlawful interference. Explanation.\u2013\u2013for the purposes of this clause \"acts of unlawful interference\" means acts or attempted acts to jeopardize the safety of civil aviation and air transport, including\u2013\u2013 (i) unlawful seizure of aircraft in flight; (ii) unlawful seizure of aircraft on the ground;",
+                    "qas": [
+                        {
+                            "question": "What is an example of an act to jeopardize the safety of civil aviation?",
+                            "answer": [
+                                {
+                                    "answer": "unlawful seizure of aircraft in flight",
+                                    "ans_startindex": 2063,
+                                    "ans_endindex": 2100
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who is deployed by the Central Government or appointed by any agency authorised by that Government to ensure security of civil aviation against acts of unlawful interference?",
+                            "answer": [
+                                {
+                                    "answer": "security personnel",
+                                    "ans_startindex": 1665,
+                                    "ans_endindex": 1682
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is section 3 of?",
+                            "answer": [
+                                {
+                                    "answer": "national investigation agency act , 2008",
+                                    "ans_startindex": 156,
+                                    "ans_endindex": 194
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "(iii) hostage-taking on board aircraft or on aerodromes; (iv) forcible intrusion on board aircraft, at an aerodrome or on the premises on an aeronautical facility; (v) introduction on board an aircraft or at an aerodrome, of a weapon, explosive or other hazardous device, article or substances intended for criminal purposes; (vi) communication of false information with a view to jeopardize the safety of an aircraft in flight or on the ground, of passengers, crew, ground personnel or the general public, at an aerodrome or on the premises of a civil aviation facility.",
+                    "qas": [
+                        {
+                            "question": "What is it called on board aircraft or on aerodromes?",
+                            "answer": [
+                                {
+                                    "answer": "hostage - taking",
+                                    "ans_startindex": 6,
+                                    "ans_endindex": 19
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Hijacking.\u2013\u2013(1) Whoever unlawfully and intentionally seizes or exercises control of an aircraft in service by force or threat thereof, or by coercion, or by any other form of intimidation, or by any technological means, commits the offence of hijacking. (2) A person shall also be deemed to have committed the offence of hijacking specified in sub- section (1), if, such person\u2013\u2013 (a) makes a threat to commit such offence or unlawfully and intentionally causes any person to receive such threat under circumstances which indicate that the threat is credible; or (b) attempts to commit or abets the commission of such offence; or (c) organises or directs others to commit such offence or the offence specified in clause (a) or clause (b) above; (d) participates as an accomplice in such offence or the offence specified in clause (a) or clause (b) above; (e) unlawfully and intentionally assists another person to evade investigation, prosecution or punishment, knowing that such person has committed any such offence or the offence specified in clause (a) or clause (b) or clause (c) or clause (d) above, or that such person is wanted for criminal prosecution by law enforcement authorities for such an offence or has been sentenced for such an offence.",
+                    "qas": [
+                        {
+                            "question": "Whoever unlawfully and intentionally seizes or exercises control of an aircraft in service by force or threat commits the offence of what?",
+                            "answer": [
+                                {
+                                    "answer": "hijacking",
+                                    "ans_startindex": 243,
+                                    "ans_endindex": 251
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is a person wanted for if he or she commits the offence of hijacking?",
+                            "answer": [
+                                {
+                                    "answer": "criminal prosecution",
+                                    "ans_startindex": 1139,
+                                    "ans_endindex": 1158
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the offence of hijacking specified in?",
+                            "answer": [
+                                {
+                                    "answer": "sub - section ( 1 )",
+                                    "ans_startindex": 344,
+                                    "ans_endindex": 359
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "(3) A person also commits the offence of hijacking, when committed intentionally, whether or not any of the offences specified in sub-section (1) or in clause (a) of sub-section (2) is actually committed or attempted, either or both of the following:\u2013\u2013 (a) agreeing with one or more other persons to commit an offence specified in sub-section (1) or in clause (a) of sub-section (2), involving an act undertaken by one of the participants in furtherance of the agreement; or (b) contributing in any manner to the commission of an offence specified in sub-section (1) or in clause (a) of sub-section (2) by a group of persons acting with a common purpose and such contribution shall either\u2013\u2013 (i) be made with the aim of furthering the general criminal activity or purpose of the group, where such activity or purpose involves the commission of such an offence; or (ii) be made in the knowledge of the intention of the group to commit such offence. (4) For the purposes of this Act, an aircraft shall be considered to be \"in service\" from the beginning of the pre-flight preparation of the aircraft by ground personnel or by the crew for a specific flight until twenty-four hours after any landing and in the case of a forced landing, the flight shall be deemed to continue until the competent authorities take over the responsibility for the aircraft and for persons and property on board.",
+                    "qas": [
+                        {
+                            "question": "What is an offence when committed intentionally?",
+                            "answer": [
+                                {
+                                    "answer": "hijacking",
+                                    "ans_startindex": 41,
+                                    "ans_endindex": 49
+                                }
+                            ]
+                        },
+                        {
+                            "question": "For the purposes of this Act, an aircraft shall be considered to be in service until how long after any landing?",
+                            "answer": [
+                                {
+                                    "answer": "twenty - four hours",
+                                    "ans_startindex": 1160,
+                                    "ans_endindex": 1176
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Punishment for hijacking.\u2013\u2013Whoever commits the offence of hijacking shall be punished\u2013\u2013 (a) with death where such offence results in the death of a hostage or of a security personnel or of any person not involved in the offence, as a direct consequence of the office of hijacking; or (b) with imprisonment for life which shall mean imprisonment for the remainder of that person's natural life and with fine, and the movable and immovable property of such person shall also be liable to be confiscated. ",
+                    "qas": [
+                        {
+                            "question": "What shall a person be punished with if the offence results in the death of a hostage or a security personnel?",
+                            "answer": [
+                                {
+                                    "answer": "death",
+                                    "ans_startindex": 97,
+                                    "ans_endindex": 101
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the punishment for hijacking?",
+                            "answer": [
+                                {
+                                    "answer": "imprisonment for life",
+                                    "ans_startindex": 293,
+                                    "ans_endindex": 313
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Punishment for acts of violence connected with hijacking.\u2013\u2013Whoever, being a person committing the offence of hijacking of an aircraft, commits, in connection with such offence, any act of violence against any passenger or member of the crew of such aircraft, shall be punished with the same punishment with which he would have been punishable under any law for the time being in force in India if such act had been committed in India. ",
+                    "qas": [
+                        {
+                            "question": "In what country would a person who commits an act of violence against a passenger or member of the crew of an aircraft be punished with the same punishment as he would have been if the act had been committed in India?",
+                            "answer": [
+                                {
+                                    "answer": "india",
+                                    "ans_startindex": 388,
+                                    "ans_endindex": 392
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Conferment of powers of investigations, etc.\u2013\u2013(1) For the purposes of this Act, the Central Government may, notwithstanding anything contained in the Code of Criminal Procedure, 1973 (2 of 1974), by notification, confer on any officer of the Central Government or any officer of the Agency, powers of arrest, investigation and prosecution exercisable by a police officer under the said Code. (2) All officers of police and all officers of Government are hereby required and empowered to assist the officer of the Central Government referred to in sub-section (1) in the execution of the provisions of this Act. ",
+                    "qas": [
+                        {
+                            "question": "Under what section are all officers of police and all officers of government required and empowered to assist the officer of the Central Government in the execution of the provisions of this Act?",
+                            "answer": [
+                                {
+                                    "answer": "sub - section ( 1 )",
+                                    "ans_startindex": 547,
+                                    "ans_endindex": 561
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What powers may a police officer confer under the Code of Criminal Procedure?",
+                            "answer": [
+                                {
+                                    "answer": "powers of arrest , investigation and prosecution",
+                                    "ans_startindex": 291,
+                                    "ans_endindex": 337
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who is required and empowered to assist the officer of the Central Government in the execution of the provisions of this Act?",
+                            "answer": [
+                                {
+                                    "answer": "all officers of police and all officers of government",
+                                    "ans_startindex": 396,
+                                    "ans_endindex": 448
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the name of the Code of Criminal Procedure?",
+                            "answer": [
+                                {
+                                    "answer": "1973 ( 2 of 1974",
+                                    "ans_startindex": 178,
+                                    "ans_endindex": 192
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Jurisdiction.\u2013\u2013(1) Subject to the provisions of sub-section (2), where an offence under section 3 or section 5 is committed outside India, the person committing such offence may be dealt with in respect thereof as if such offence had been committed at any place within India at which he may be found. (2) No Court shall take cognizance of an offence punishable under section 3 or section 5 which is committed outside India unless,\u2013\u2013 (a) such offence is committed within the territory of India; (b) such offence is committed against or on board an aircraft registered in India; (c) such offence is committed on board and the aircraft in which the offence is committed lands in India with the alleged offender still on board; (d) such offence is committed against or on board an aircraft which is for the time being leased without crew to a lessee who has his principal place of business or where he has no such place of business, his permanent residence is in India; (e) such offence is committed by or against a citizen of India; (f) such offence is committed by a stateless person whose habitual residence is in the territory of India; (g) such offence is committed by the alleged offender who is present in India but not extradited under section 11. ",
+                    "qas": [
+                        {
+                            "question": "What is an offence punishable outside of India?",
+                            "answer": [
+                                {
+                                    "answer": "section 3 or section 5 is committed outside india , the person committing such offence may be dealt with in respect thereof as if such offence had been committed at any place within india at which he may be found . ( 2 ) no court shall take cognizance of an offence punishable under section 3 or section 5 which is committed outside india unless , \u2013 \u2013 ( a ) such offence is committed within the territory of india",
+                                    "ans_startindex": 88,
+                                    "ans_endindex": 491
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Where is an offence punishable under section 3 or section 5 committed?",
+                            "answer": [
+                                {
+                                    "answer": "outside india",
+                                    "ans_startindex": 124,
+                                    "ans_endindex": 136
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who shall take cognizance of an offence punishable under section 3 or section 5 committed outside India?",
+                            "answer": [
+                                {
+                                    "answer": "no court",
+                                    "ans_startindex": 305,
+                                    "ans_endindex": 312
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is an offence punishable under section 3 or section 5 committed against or on board?",
+                            "answer": [
+                                {
+                                    "answer": "an aircraft registered in india",
+                                    "ans_startindex": 544,
+                                    "ans_endindex": 574
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Designated Court.\u2013\u2013(1) For the purpose of providing for speedy trial, the State Government shall, with the concurrence of the Chief Justice of the High Court, by notification, specify a Court of Sessions to be a Designated Court for such area or areas as may be specified in the notification. (2) Notwithstanding the provisions of sub-section (1), the Special Court Constituted undersection 11 or, as the case may be, under section22 of the National Investigation Agency Act, 2008 (34 of 2008) shall be the Designated Court for the purposes of this Act in case where the power of arrest, investigation and prosecution is exercised by the Agency under sub-section (1) of section 6. (3) Notwithstanding anything contained in the Code of Criminal Procedure, 1973 (2 of 1974), a Designated Court shall, as far as practicable, hold the trial on a day-to-day basis. ",
+                    "qas": [
+                        {
+                            "question": "What was the number of the National Investigation Agency Act, 2008?",
+                            "answer": [
+                                {
+                                    "answer": "34",
+                                    "ans_startindex": 482,
+                                    "ans_endindex": 483
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What does the State Government specify to be a Designated Court?",
+                            "answer": [
+                                {
+                                    "answer": "a court of sessions",
+                                    "ans_startindex": 184,
+                                    "ans_endindex": 202
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the Code of Criminal Procedure?",
+                            "answer": [
+                                {
+                                    "answer": "1973 ( 2 of 1974",
+                                    "ans_startindex": 755,
+                                    "ans_endindex": 769
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Under what section of the National Investigation Agency Act, 2008?",
+                            "answer": [
+                                {
+                                    "answer": "section22",
+                                    "ans_startindex": 424,
+                                    "ans_endindex": 432
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the Code of Criminal Procedure?",
+                            "answer": [
+                                {
+                                    "answer": "1973 ( 2 of 1974",
+                                    "ans_startindex": 755,
+                                    "ans_endindex": 769
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Whose consent may the State Government give to designate a Court of Sessions for speedy trial?",
+                            "answer": [
+                                {
+                                    "answer": "chief justice of the high court",
+                                    "ans_startindex": 126,
+                                    "ans_endindex": 156
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Offences triable by Designated Court.\u2013\u2013(1) Notwithstanding anything contained in the Code of Criminal Procedure, 1973 (2 of 1974),\u2013\u2013 (a) all offences under this Act shall be triable by the Designated Court referred to in section 8. (b) where a person who is accused or suspected of the commission of an offence under this Act is forwarded to the Magistrate under sub-section (2) or sub-section (2A) of section 167 of the Code of Criminal Procedure, 1973 (2 of 1974), such Magistrate may authorise detention of such person in such custody, as he thinks fit, for a period not exceeding thirty days in the whole, where such Magistrate is a Judicial Magistrate, and seven days in the whole, where such Magistrate is an Executive Magistrate: Provided that the Magistrate may, if he considers that the detention of such person is not required,\u2013\u2013 (i) when such person is forwarded to him as aforesaid; or (ii) upon or at any time before the expiry of the period of detention authorised by him, he shall order such person to be forwarded to the Designated Court having jurisdiction; (c) the Designated Court may exercise, in relation to the person forwarded to it under clause (b), the same power which a Magistrate having jurisdiction to try a case may exercise under section 167 of the Code of Criminal Procedure, 1973 (2 of 1974), in relation to an accused person in such case who has been forwarded to him under that section; (d) the Designated Court may, upon perusal of the report filled by the Agency or a complaint made by an officer of the Central Government, or the State Government, as the case may be, authorised in this behalf, take cognizance of the offence without the accused being committed to it for trial. (2) When trying an offence under this Act, a Designated Court may also try an offence other than an offence under this Act, which the accused may, under the Code of Criminal Procedure, 1973 (2 of 1974), be charged at the same trial. ",
+                    "qas": [
+                        {
+                            "question": "What is section 8 of the Code of Criminal Procedure?",
+                            "answer": [
+                                {
+                                    "answer": "all offences under this act shall be triable by the designated court",
+                                    "ans_startindex": 137,
+                                    "ans_endindex": 204
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the Code of Criminal Procedure?",
+                            "answer": [
+                                {
+                                    "answer": "1973 ( 2 of 1974",
+                                    "ans_startindex": 113,
+                                    "ans_endindex": 127
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What does section 167 of the Code of Criminal Procedure refer to?",
+                            "answer": [
+                                {
+                                    "answer": "sub - section ( 2 ) or sub - section ( 2a )",
+                                    "ans_startindex": 363,
+                                    "ans_endindex": 397
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who may authorise detention of a person who is accused or suspected of the commission of an offence under this Act?",
+                            "answer": [
+                                {
+                                    "answer": "the magistrate",
+                                    "ans_startindex": 342,
+                                    "ans_endindex": 355
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Under what section of the Code of Criminal Procedure, 1973 (2 of 1974) may a Magistrate authorise the detention of a person?",
+                            "answer": [
+                                {
+                                    "answer": "sub - section ( 2 ) or sub - section ( 2a )",
+                                    "ans_startindex": 363,
+                                    "ans_endindex": 397
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Application of Code to proceedings before Designated Court.\u2013\u2013Save as otherwise provided in this Act, the provisions of the Code of Criminal Procedure, 1973 (2 of 1974) shall apply to the proceedings before a Designated Court and the person conducting a prosecution before a Designated Court shall be deemed to be a Public Prosecutor. ",
+                    "qas": [
+                        {
+                            "question": "What Act applies to proceedings before a Designated Court?",
+                            "answer": [
+                                {
+                                    "answer": "code of criminal procedure , 1973",
+                                    "ans_startindex": 123,
+                                    "ans_endindex": 154
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Provisions as to extradition.\u2013\u2013(1) The offences under section 3 and section 5 shall be deemed to have been included as extraditable offences and provided for in all the extradition treaties made by India with Convention countries and which extend to, and are binding on, India on the date of commencement of this Act. (2) For the purposes of the application of the Extradition Act, 1962 (34 of 1962) to offences under this Act, any aircraft registered in a Convention country shall, at any time while that aircraft is in service, be deemed to be within the jurisdiction of that country, whether or not it is for the time being also within the jurisdiction of any other country. (3) None of the offences mentioned in section 3 shall be regarded, for the purposes of extradition or mutual legal assistance, as a political offence or as an offence connected with a political offence or as an offence inspired by political motives and a request for extradition or for mutual legal assistance based on such an offence shall not be refused on the sole ground that it concerns a political offence or an offence connected with a political offence or an offence inspired by political motives. ",
+                    "qas": [
+                        {
+                            "question": "When are extradition treaties binding on India?",
+                            "answer": [
+                                {
+                                    "answer": "on the date of commencement of this act",
+                                    "ans_startindex": 277,
+                                    "ans_endindex": 315
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What was the number of the Extradition Act, 1962?",
+                            "answer": [
+                                {
+                                    "answer": "34",
+                                    "ans_startindex": 388,
+                                    "ans_endindex": 389
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What kind of offence is not regarded as an offence for the purposes of extradition?",
+                            "answer": [
+                                {
+                                    "answer": "political",
+                                    "ans_startindex": 810,
+                                    "ans_endindex": 818
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What shall, at any time while that aircraft is in service, be deemed to be within the jurisdiction of that country?",
+                            "answer": [
+                                {
+                                    "answer": "any aircraft registered in a convention country",
+                                    "ans_startindex": 428,
+                                    "ans_endindex": 474
+                                }
+                            ]
+                        },
+                        {
+                            "question": "For the purposes of extradition, what shall none of the offences mentioned in section 3 be regarded as?",
+                            "answer": [
+                                {
+                                    "answer": "a political offence",
+                                    "ans_startindex": 808,
+                                    "ans_endindex": 826
+                                }
+                            ]
+                        },
+                        {
+                            "question": "The extradition treaties made by India with Convention countries extend to, and are binding on, what country?",
+                            "answer": [
+                                {
+                                    "answer": "india",
+                                    "ans_startindex": 271,
+                                    "ans_endindex": 275
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Provision as to bail.\u2013\u2013(1) Notwithstanding anything contained in the Code of Criminal Procedure, 1973 (2 of 1974), no person accused of an offence punishable under this Act shall, if in custody, be released on bail or on his own bond, unless,\u2013\u2013 (a) the Public Prosecutor has been given an opportunity to oppose the application for such release; and (b) where Public Prosecutor opposes the application, the Designated Court is satisfied that there are reasonable grounds for believing that he is not guilty of such offence and that he is not likely to commit any offence while on bail. (2) The limitations on granting of bail as specified in sub-section (1) are in addition to the limitation under the Code of Criminal Procedure, 1973 (2 of 1974), or any other law for the time being in force, on granting bail. (3) Nothing contained in this section shall be deemed to affect the special powers of the High Court regarding bail under section 439 of the Code of Criminal Procedure, 1973 (2 of 1974). ",
+                    "qas": [
+                        {
+                            "question": "What is the Code of Criminal Procedure?",
+                            "answer": [
+                                {
+                                    "answer": "1973 ( 2 of 1974",
+                                    "ans_startindex": 97,
+                                    "ans_endindex": 111
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What does section 439 of the Code of Criminal Procedure refer to?",
+                            "answer": [
+                                {
+                                    "answer": "special powers of the high court regarding bail",
+                                    "ans_startindex": 879,
+                                    "ans_endindex": 925
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What does section 439 of the Code of Criminal Procedure refer to?",
+                            "answer": [
+                                {
+                                    "answer": "special powers of the high court regarding bail",
+                                    "ans_startindex": 879,
+                                    "ans_endindex": 925
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What section of the Code of Criminal Procedure, 1973 (2 of 1974 provides for special powers of the High Court regarding bail?",
+                            "answer": [
+                                {
+                                    "answer": "section 439",
+                                    "ans_startindex": 933,
+                                    "ans_endindex": 943
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What section of the Code of Criminal Procedure, 1973 (2 of 1974 provides for special powers of the High Court regarding bail?",
+                            "answer": [
+                                {
+                                    "answer": "section 439",
+                                    "ans_startindex": 933,
+                                    "ans_endindex": 943
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What does section 439 of the Code of Criminal Procedure contain?",
+                            "answer": [
+                                {
+                                    "answer": "nothing contained in this section shall be deemed to affect the special powers of the high court regarding bail",
+                                    "ans_startindex": 815,
+                                    "ans_endindex": 925
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Contracting parties to Convention.\u2013\u2013The Central Government may, by notification, certify as to who are the contracting parties to the Hague Convention and to what extent they have availed themselves of the provisions of the Convention, and any such notification shall be conclusive evidence of the matters certified therein. ",
+                    "qas": [
+                        {
+                            "question": "Who may certify who are the contracting parties to the Hague Convention and to what extent they have availed themselves of the provisions of the Convention?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 36,
+                                    "ans_endindex": 57
+                                }
+                            ]
+                        },
+                        {
+                            "question": "The Central Government may certify who are the contracting parties to what convention?",
+                            "answer": [
+                                {
+                                    "answer": "the hague convention",
+                                    "ans_startindex": 130,
+                                    "ans_endindex": 149
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Power to treat certain aircraft to be registered in Convention countries.\u2013\u2013(1) If the Central Government is satisfied that the requirements of sub-section (2) have been satisfied in relation to any aircraft, it may, by notification, direct that such aircraft shall, for the purposes of this Act, be treated as registered in such Convention country as may be specified in the notification. (2) Where the Convention countries establish joint air transport operating organisations or international operating agencies, which operate aircraft which are subject to joint or international registration, shall, by appropriate means, designate for each aircraft, the country among them which shall exercise the jurisdiction and have the attributes of the country of registry for the purposes of the Convention and shall give notice thereof to the Secretary General of the International Civil Aviation Organisation who shall communicate the notice to all Convention countries. ",
+                    "qas": [
+                        {
+                            "question": "Who shall give notice of the country exercising jurisdiction and having the attributes of the country of registry for the purposes of the Convention?",
+                            "answer": [
+                                {
+                                    "answer": "secretary general of the international civil aviation organisation",
+                                    "ans_startindex": 838,
+                                    "ans_endindex": 903
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who may direct that certain aircraft be treated as registered in such Convention country as may be specified in the notification?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 82,
+                                    "ans_endindex": 103
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What do Convention countries establish to operate aircraft that are subject to joint or international registration?",
+                            "answer": [
+                                {
+                                    "answer": "joint air transport operating organisations or international operating agencies",
+                                    "ans_startindex": 434,
+                                    "ans_endindex": 512
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who may direct that certain aircraft be treated as registered in such Convention country as may be specified in the notification?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 82,
+                                    "ans_endindex": 103
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Previous sanction necessary for prosecution.\u2013\u2013No prosecution for an offence under this Act shall be instituted except with the previous sanction of the Central Government. ",
+                    "qas": [
+                        {
+                            "question": "Whose prior sanction is required for a prosecution under this Act?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 148,
+                                    "ans_endindex": 169
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Whose prior sanction is required for a prosecution under this Act?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 148,
+                                    "ans_endindex": 169
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "\u2013In a prosecution for an offence under section 3 or section 5, if it is proved that\u2013\u2013 (a) the arms, ammunitions or explosives were recovered from the possession of the accused and there is reason to believe that such arms, ammunitions or explosives of similar nature were used in the commission of such offence; or (b) there is evidence of use of force, threat of force or any other form of intimidation caused to the crew or passengers in connection with the commission of such offence, the Designated Court shall presume, unless the contrary is proved, that the accused has committed such offence. ",
+                    "qas": [
+                        {
+                            "question": "Who presumes that the accused has committed an offence under section 3 or section 5?",
+                            "answer": [
+                                {
+                                    "answer": "the designated court",
+                                    "ans_startindex": 488,
+                                    "ans_endindex": 507
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Protection of action taken in good faith.\u2013\u2013(1) No suit, prosecution or other legal proceeding shall lie against any person for anything which is in good faith done or intended to be done in pursuance of the provisions of this Act. (2) No suit or other legal proceeding shall lie against the Central Government for any damage caused or likely to be caused for anything which is in good faith done or intended to be done in pursuance of the provisions of this Act. ",
+                    "qas": [
+                        {
+                            "question": "What is the purpose of this Act?",
+                            "answer": [
+                                {
+                                    "answer": "protection of action taken in good faith",
+                                    "ans_startindex": 0,
+                                    "ans_endindex": 39
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What shall lie against the Central Government for any damage caused or likely to be caused?",
+                            "answer": [
+                                {
+                                    "answer": "no suit or other legal proceeding",
+                                    "ans_startindex": 235,
+                                    "ans_endindex": 267
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who shall not be liable for a suit, prosecution or other legal proceeding under this Act?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 287,
+                                    "ans_endindex": 308
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who shall not be sued for damage caused by a good faith act?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 287,
+                                    "ans_endindex": 308
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Powers of investigating officers to seize or attach property.\u2013\u2013(1) Where any officer, referred to in section 6, while conducting an inquiry or investigation has a reason to believe that any property, movable or immovable, or both, is relatable to the commission of the offence in relation to which such inquiry or investigation is being conducted, is likely to be concealed, transferred or dealt with in any manner which will result in disposal of such property, he may make an order for seizing such property and where it is not practicable to seize such property, he may make an order of attachment directing that such property shall not be transferred or otherwise dealt with, except with the prior permission of the officer making such order, and a copy of such order shall be served on the person concerned. (2) Any order made under sub-section (1) shall have no effect unless the said order is confirmed by an order of the Designated Court, within a period of forty-eight hours of its being made. (3) The Designated Court may either confirm or revoke the order of seizure or attachment referred to in sub-section (2). (4) Notwithstanding the confirmation of the order by the Designated Court under sub-section (3), any person aggrieved by the order of attachment made under sub-section (1), may make an application to the Designated Court for revocation of said order within a period of thirty days from the date of confirmation of the order under sub-section (3). ",
+                    "qas": [
+                        {
+                            "question": "Who has the power to seize or attach property?",
+                            "answer": [
+                                {
+                                    "answer": "investigating officers",
+                                    "ans_startindex": 10,
+                                    "ans_endindex": 31
+                                }
+                            ]
+                        },
+                        {
+                            "question": "How long after the date of confirmation of the order under sub-section (3) can a person aggrieved by the order of attachment make an application to the Designated Court for revocation of the order?",
+                            "answer": [
+                                {
+                                    "answer": "thirty days",
+                                    "ans_startindex": 1393,
+                                    "ans_endindex": 1403
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is a reason to believe property is relatable to?",
+                            "answer": [
+                                {
+                                    "answer": "the commission of the offence",
+                                    "ans_startindex": 247,
+                                    "ans_endindex": 275
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who may confirm or revoke an order made under sub-section (1)?",
+                            "answer": [
+                                {
+                                    "answer": "designated court",
+                                    "ans_startindex": 929,
+                                    "ans_endindex": 944
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the sub-section of the power of investigating officers to seize or attach property?",
+                            "answer": [
+                                {
+                                    "answer": "section 6",
+                                    "ans_startindex": 101,
+                                    "ans_endindex": 109
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What is the time limit for the confirmation of an order of the Designated Court under sub-section (1)?",
+                            "answer": [
+                                {
+                                    "answer": "forty - eight hours",
+                                    "ans_startindex": 966,
+                                    "ans_endindex": 982
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Confiscation and forfeiture of property.\u2013\u2013Where any order is made by the Designated Court under section 4 for confiscation of movable or immovable property or both, of the accused, then, such property shall stand forfeited to the Government free from all encumbrances: Provided that the Designated Court may, during the period of such trial, order that all or any of the properties, movable or immovable, or both, belonging to the accused be attached, and in case such trial ends in conviction, then, the property so attached shall stand forfeited to Government free from all encumbrances. ",
+                    "qas": [
+                        {
+                            "question": "What does the Designated Court do when an order is made for the confiscation of movable or immovable property or both, of the accused?",
+                            "answer": [
+                                {
+                                    "answer": "order that all or any of the properties , movable or immovable , or both , belonging to the accused be attached",
+                                    "ans_startindex": 342,
+                                    "ans_endindex": 449
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "General power to make rules.\u2013\u2013(1) The Central Government may, by notification, make rules for carrying out the provisions of this Act. (2) Every rule made under this Act by the Central Government shall be laid, as soon as may be after it is made, before each House of Parliament, while it is in session, for a total period of thirty days which may be comprised in one session or in two or more successive sessions, and if, before the expiry of the session immediately following the session or the successive sessions aforesaid, both Houses agree in making any modification in the rule or both Houses agree that the rule should not be made, the rule shall thereafter have effect only in such modified form or be of no effect, as the case may be; so, however, that any such modification or annulment shall be without prejudice to the validity of anything previously done under that rule. ",
+                    "qas": [
+                        {
+                            "question": "What is the total period for which a rule made under this Act by the Central Government may be laid before each House of Parliament while it is in session?",
+                            "answer": [
+                                {
+                                    "answer": "thirty days",
+                                    "ans_startindex": 326,
+                                    "ans_endindex": 336
+                                }
+                            ]
+                        },
+                        {
+                            "question": "Who may make rules for carrying out the provisions of this Act?",
+                            "answer": [
+                                {
+                                    "answer": "the central government",
+                                    "ans_startindex": 34,
+                                    "ans_endindex": 55
+                                }
+                            ]
+                        },
+                        {
+                            "question": "How many days may a rule be laid before each House of Parliament while it is in session?",
+                            "answer": [
+                                {
+                                    "answer": "thirty days",
+                                    "ans_startindex": 326,
+                                    "ans_endindex": 336
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "Repeal and savings.\u2013\u2013(1) The Anti-Hijacking Act, 1982 (65 of 1982) is hereby repealed. (2) The repeal of the said Act shall not affect\u2013\u2013 (a) the previous operation of, or anything duly done or suffered under, or any action taken or purported to have been done or taken including any notification, order or notice made or issued, or any appointment, confirmation or declaration made or any authorisation granted or any document or instrument executed or any direction given, under the Act so repealed, shall, in so far as it is not inconsistent with the provisions of this Act, be deemed to have been done or taken under the corresponding provisions of this Act; or (b) any right, privilege or obligation or liability acquired, accrued or incurred under the said Act; or (c) any penalty, forfeiture or punishment incurred in respect of any offence under the said Act; or (d) any investigation, legal proceeding or remedy in respect of any such right, privilege, obligation, liability, penalty, forfeiture or punishment as aforesaid, and, any such investigation, legal proceeding or remedy may be instituted, continued or enforced and any such penalty, forfeiture or punishment may be imposed as if the said Act had not been repealed.",
+                    "qas": [
+                        {
+                            "question": "What year was the Anti-Hijacking Act passed?",
+                            "answer": [
+                                {
+                                    "answer": "1982",
+                                    "ans_startindex": 49,
+                                    "ans_endindex": 52
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What shall not affect the previous operation of the Anti-Hijacking Act?",
+                            "answer": [
+                                {
+                                    "answer": "the repeal",
+                                    "ans_startindex": 91,
+                                    "ans_endindex": 100
+                                }
+                            ]
+                        },
+                        {
+                            "question": "What shall the repeal of the Anti-Hijacking Act, 1982 not affect?",
+                            "answer": [
+                                {
+                                    "answer": "the previous operation of , or anything duly done or suffered under , or any action taken or purported to have been done or taken",
+                                    "ans_startindex": 141,
+                                    "ans_endindex": 267
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
