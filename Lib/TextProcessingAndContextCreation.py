@@ -36,13 +36,25 @@ class TextProcessingAndContextCreation :
     @classmethod
     def _get_the_first_page_number(cls, raw_text) :
 
-        index = raw_text[0].split().index('ACT,')
-        match_text_page_zero = " ".join(raw_text[0].split()[:index + 1])
+        index = -1
+        try :
+            index = raw_text[0].split().index('ACT,')
+        except :
+            year_regex = r"[0-9]{4}"
+            for i in range(len(raw_text[0].split())) :
+                if (re.match(year_regex, raw_text[0].split()[i])) is not None :
+                    index = i
+                    break
 
+        if index == -1 :
+            return -1
+
+        match_text_page_zero = " ".join(raw_text[0].split()[:index + 1])
         for i in range(1, len(raw_text)) :
             page_match_text = " ".join(raw_text[i].split()[:index + 1])
             if match_text_page_zero == page_match_text :
                 return i
+
         return -1
 
     @classmethod
@@ -181,7 +193,7 @@ class TextProcessingAndContextCreation :
         return contexts
                         
 if __name__=="__main__" :
-    x = TextProcessingAndContextCreation.get_context_chunks("2020 - The Direct Tax Vivad se Vishwas Act, 2020.pdf")
+    x = TextProcessingAndContextCreation.get_context_chunks("The Code on Wages, 2019.pdf")
     # x = TextProcessingAndContextCreation.get_context_chunks("Sexual Harassment Act, 2013.pdf")
     # x = TextProcessingAndContextCreation.get_context_chunks("Advocates' Welfare Fund Act, 2001.pdf")
     if x :
