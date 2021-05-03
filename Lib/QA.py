@@ -42,7 +42,7 @@ class QA() :
 
         #If the start index is more than the end index
         if(start_index > end_index) :
-            return "No answer"
+            return "(Answer Not Found)"
 
         #Processing the subword characters added by BERT to get a well organised answer
         answer = tokens[start_index]
@@ -56,7 +56,7 @@ class QA() :
                 answer += ' ' + tokens[i]
 
         # If the answer is not found
-        if answer == "[CLS]" :
+        if answer[:5] == "[CLS]" :
             answer = "(Answer Not Found!)"
 
         #returning the answer
