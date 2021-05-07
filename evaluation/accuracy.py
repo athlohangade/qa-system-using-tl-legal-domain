@@ -5,7 +5,6 @@ def calculate_accuracy(true, predictions) :
 
     predictions_score = 0
     true_score = 0
-    punc = '''!()-[]{};:'"\, <>./?@#$%^&*_~'''
 
     for i in range(len(true)) :
         true[i] = true[i].lower()

@@ -161,6 +161,7 @@ class TextProcessingAndContextCreation :
             text[i] = re.sub(r"(“|”|’)", "\"", text[i])
             text[i] = re.sub(r"\n", " ", text[i])
             text[i] = re.sub(r" +", " ", text[i])
+            text[i] = re.sub(r"––", "- ", text[i])
             text[i] = re.sub(r"—", "- ", text[i])
 
     @classmethod
@@ -266,6 +267,7 @@ class TextProcessingAndContextCreation :
                         
 if __name__=="__main__" :
     x = TextProcessingAndContextCreation.get_context_chunks("The Code on Wages, 2019.pdf")
+    # x = TextProcessingAndContextCreation.get_context_chunks("Anti-Hijacking Act, 2016.pdf")
     # x = TextProcessingAndContextCreation.get_context_chunks("Sexual Harassment Act, 2013.pdf")
     # x = TextProcessingAndContextCreation.get_context_chunks("Advocates' Welfare Fund Act, 2001.pdf")
     if x :
