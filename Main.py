@@ -26,7 +26,7 @@ class Main :
 
         answers = []
         for i in question_context_list :
-            answers.append(cls.qa.answer(i[0], i[1]))
+            answers.append(cls.qa.answer([i[0]], [i[1]]))
 
         return answers
 
