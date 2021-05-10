@@ -5,12 +5,6 @@ import random
 import streamlit as st
 from Main import Main
 
-@st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=False)
-def generate_questions(contexts) :
-
-    generated_questions_and_contexts = Main.get_questions_given_the_contexts(contexts)
-    return generated_questions_and_contexts
-
 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=False)
 def get_contexts(doc_name) :
@@ -20,10 +14,26 @@ def get_contexts(doc_name) :
 
 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=False)
+def generate_questions(contexts) :
+
+    generated_questions_and_contexts = Main.get_questions_given_the_contexts(contexts)
+    return generated_questions_and_contexts
+
+
+@st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=False)
 def get_answers_for_questions(generated_questions_and_contexts) :
 
     answers = Main.get_answer_given_the_question_and_context_list(generated_questions_and_contexts)
     return answers
+
+
+@st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=False)
+def generate_answer_for_the_question(question, contexts) :
+
+    answer = Main.get_answer_for_single_question_given_context_list(question, contexts)
+    return answer
+
+
 
 # Print the title
 st.title("Question Answering system for Legal Documents")
@@ -40,8 +50,15 @@ if mode_of_operation == 0 :
     st.header("Choose a legal doc :")
     st.write(" ")
     legal_docs_names = os.listdir("./legal_docs/")
+    legal_docs_names = [i for i in legal_docs_names if i[-4:] == ".pdf"]
     legal_docs_names = ["Select Act"] + legal_docs_names
     doc_name = st.selectbox("", [legal_doc.replace(".pdf", "") for legal_doc in legal_docs_names])
+
+    uploaded_file = st.file_uploader("Choose a file", type = 'pdf')
+    if uploaded_file is not None :
+        with open(f"./legal_docs/uploads/{uploaded_file.name}", "wb") as f:
+            f.write(uploaded_file.getbuffer())
+        doc_name = "uploads/" + uploaded_file.name[:-4]
 
     if doc_name != "Select Act" :
 
@@ -80,31 +97,34 @@ if mode_of_operation == 0 :
 
 elif mode_of_operation == 1 :
 
-    # Print the dropdown list for selecting the doc
+     # Print the dropdown list for selecting the doc
     st.header("Choose a legal doc :")
     st.write(" ")
     legal_docs_names = os.listdir("./legal_docs/")
-    st.selectbox("", [legal_doc.replace(".pdf", "") for legal_doc in legal_docs_names])
+    legal_docs_names = [i for i in legal_docs_names if i[-4:] == ".pdf"]
+    legal_docs_names = ["Select Act"] + legal_docs_names
+    doc_name = st.selectbox("", [legal_doc.replace(".pdf", "") for legal_doc in legal_docs_names])
 
-    # Input the question from the user
-    st.header("Enter a Question :")
-    question = st.text_area("")
+    uploaded_file = st.file_uploader("Choose a file", type = 'pdf')
+    if uploaded_file is not None :
+        with open(f"./legal_docs/uploads/{uploaded_file.name}", "wb") as f:
+            f.write(uploaded_file.getbuffer())
+        doc_name = "uploads/" + uploaded_file.name[:-4]
 
-    st.write(" ")
-    if st.button("Generate answers") :
+    if doc_name != "Select Act" :
 
-        with st.spinner("Working...") :
-            # Here call the function to get the answer, given the context and question
-            generated_questions_and_contexts = [['question1', 'context1'], ['question2', 'context2']]
-            answer = "answer1"
+        st.header("Question :")
+        question = st.text_area("")
 
-        # Print the context corresponding to that answer
-        st.header("Context :")
-        st.markdown("---\n" f"{question}\n\n" "---")
-        
-        # Print the context corresponding to that answer
-        # Here call the function to get the answer, given the context and question
-        answer = "answer1"
-        st.header("Answer :")
-        st.markdown("---\n" f"{answer}\n\n" "---")
+        st.write(" ")
+        if st.button("Get the Answer") :
 
+            doc_name = "./legal_docs/" + doc_name + ".pdf"
+            contexts = get_contexts(doc_name)
+
+            with st.spinner("Finding the Answer...") :
+                answer = generate_answer_for_the_question(question, contexts)
+
+            # Print the answer
+            st.header("Answer :")
+            st.markdown("---\n" f"{answer}\n\n" "---")
