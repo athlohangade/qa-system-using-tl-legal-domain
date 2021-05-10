@@ -92,8 +92,9 @@ class TextProcessingAndContextCreation :
             if match_text_page_zero == page_match_text :
                 return i
 
-        # Failed
-        return -1
+        # The Act doesn't have any index pages, and thus return the first page
+        # itself as the content page
+        return 0
 
     @classmethod
     def _remove_header_of_first_page(cls, raw_text) :
@@ -266,8 +267,8 @@ class TextProcessingAndContextCreation :
         return contexts
                         
 if __name__=="__main__" :
-    x = TextProcessingAndContextCreation.get_context_chunks("The Code on Wages, 2019.pdf")
-    # x = TextProcessingAndContextCreation.get_context_chunks("Anti-Hijacking Act, 2016.pdf")
+    # x = TextProcessingAndContextCreation.get_context_chunks("The Code on Wages, 2019.pdf")
+    x = TextProcessingAndContextCreation.get_context_chunks("Anti-Hijacking Act, 2016.pdf")
     # x = TextProcessingAndContextCreation.get_context_chunks("Sexual Harassment Act, 2013.pdf")
     # x = TextProcessingAndContextCreation.get_context_chunks("Advocates' Welfare Fund Act, 2001.pdf")
     if x :
