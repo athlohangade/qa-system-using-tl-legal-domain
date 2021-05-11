@@ -113,14 +113,14 @@ elif mode_of_operation == 1 :
 
     if doc_name != "Select Act" :
 
-        st.header("Question :")
+        st.header("Enter the Question :")
         question = st.text_area("")
+
+        doc_name = "./legal_docs/" + doc_name + ".pdf"
+        contexts = get_contexts(doc_name)
 
         st.write(" ")
         if st.button("Get the Answer") :
-
-            doc_name = "./legal_docs/" + doc_name + ".pdf"
-            contexts = get_contexts(doc_name)
 
             with st.spinner("Finding the Answer...") :
                 answer = generate_answer_for_the_question(question, contexts)
@@ -128,3 +128,22 @@ elif mode_of_operation == 1 :
             # Print the answer
             st.header("Answer :")
             st.markdown("---\n" f"{answer}\n\n" "---")
+
+        contexts = contexts[:3]
+        with st.spinner("Finding some suggestions...") :
+            generated_questions_and_contexts = generate_questions(contexts)
+            answers = get_answers_for_questions(generated_questions_and_contexts)
+
+        st.header("Some suggested questions :")
+        st.write(" ")
+        question_numbers = list(range(len(generated_questions_and_contexts)))
+        selected_question = st.selectbox("", question_numbers, \
+            format_func = lambda x: generated_questions_and_contexts[x][0])
+
+        # Print the selected question
+        st.header("Question :")
+        st.markdown("---\n" f"{generated_questions_and_contexts[selected_question][0]}\n\n" "---")
+
+        # Print the answer
+        st.header("Answer :")
+        st.markdown("---\n" f"{answers[selected_question]}\n\n" "---")
