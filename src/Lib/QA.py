@@ -11,7 +11,8 @@ class QA() :
 
     def __init__(self) :
         #Defining the model with the tokenizer
-        self.model_file = "bert-large-uncased-whole-word-masking-finetuned-squad"
+        #self.model_file = "bert-large-uncased-whole-word-masking-finetuned-squad"
+        self.model_file = "atharvamundada99/bert-large-question-answering-finetuned-legal"
         self.model = AutoModelForQuestionAnswering.from_pretrained(self.model_file)
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_file)
         assert isinstance(self.tokenizer, transformers.PreTrainedTokenizerFast)
