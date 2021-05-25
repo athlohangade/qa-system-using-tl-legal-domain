@@ -1,0 +1,24 @@
+{
+	"doccnt": 2,
+	"data": [
+		{
+			"title": "Sexual Harassment Act, 2013",
+			"id": "HQAS000",
+			"context": "...",
+			"question": "What is Harassment?",
+			"answer": {
+				"answer_start": "<index_of_start_character>",
+				"answer_end": "<index_of_end_character>"
+			}	
+		},
+		{
+			"title": "Information Technology Act, 2000",
+			"id": "MQAS100",
+			"context": "...",
+			"question": "What is IT?",
+			"answer": {
+				"answer_start": "<index_of_start_character>",
+				"answer_end": "<index_of_end_character>"
+			}	
+		}
+	]
