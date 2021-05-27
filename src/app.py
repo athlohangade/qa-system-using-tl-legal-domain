@@ -96,15 +96,15 @@ if mode_of_operation == 0 :
 
         # Print the selected question
         st.header("Question")
-        st.markdown("---\n" f"<div style='text-align: justify'> {generated_questions_and_contexts[selected_question][0]}</div>\n\n" "---", unsafe_allow_html=True)
+        st.markdown("---\n" f"<div style='text-align: justify'>{generated_questions_and_contexts[selected_question][0]}</div>\n\n" "---", unsafe_allow_html=True)
 
         # Print the answer
         st.header("Answer")
-        st.markdown("---\n" f"<div style='text-align: justify'> {answers[selected_question]}</div>\n\n" "---", unsafe_allow_html=True)
+        st.markdown("---\n" f"<div style='text-align: justify'>{answers[selected_question]}</div>\n\n" "---", unsafe_allow_html=True)
 
         # Print the context corresponding to that answer
         st.header("Context")
-        st.markdown("---\n" f"<div style='text-align: justify'> {generated_questions_and_contexts[selected_question][1]}</div>\n\n" "---", unsafe_allow_html=True)
+        st.markdown("---\n" f"<div style='text-align: justify'>{generated_questions_and_contexts[selected_question][1]}</div>\n\n" "---", unsafe_allow_html=True)
 
 # If second mode is selected
 elif mode_of_operation == 1 :
@@ -145,17 +145,24 @@ elif mode_of_operation == 1 :
             with st.spinner("Finding the Answer...") :
                 answer = generate_answer_for_the_question(question, contexts)
 
-            # Print the answer
-            st.header("Answer")
-            st.markdown("---\n" f"<div style='text-align: justify'> {answer[0]}</div>\n\n" "---", unsafe_allow_html=True)
+            # If answer is predicted with some positive confidence score
+            if answer[2] > 0 :
+                # Print the answer
+                st.header("Answer")
+                st.markdown("---\n" f"<div style='text-align: justify'>{answer[0]}</div>\n\n" "---", unsafe_allow_html=True)
 
-            # Print the context
-            st.header("Context")
-            st.markdown("---\n" f"<div style='text-align: justify'> {answer[1]}</div>\n\n" "---", unsafe_allow_html=True)
+                # Print the context
+                st.header("Context")
+                st.markdown("---\n" f"<div style='text-align: justify'>{answer[1]}</div>\n\n" "---", unsafe_allow_html=True)
 
-            # Print the confidence value of the answer
-            st.header("Confidence value")
-            st.markdown("---\n" f"<div style='text-align: justify'> {answer[2]} %</div>\n\n" "---", unsafe_allow_html=True)
+                # Print the confidence value of the answer
+                st.markdown(f"**Confidence value :** {answer[2]} %\n\n" "---")
+
+            # If the confidence score is zero or negative
+            else :
+                # Print the answer
+                st.header("Answer")
+                st.markdown("---\n" "<div style='text-align: justify'><i>No answer</i></div>\n\n" "---", unsafe_allow_html=True)
 
         # If more suggestions are expected, shuffle the contexts to skip the cached entries
         st.write(" ")
@@ -177,12 +184,12 @@ elif mode_of_operation == 1 :
 
         # Print the selected question
         st.header("Question")
-        st.markdown("---\n" f"<div style='text-align: justify'> {generated_questions_and_contexts[selected_question][0]}</div>\n\n" "---", unsafe_allow_html=True)
+        st.markdown("---\n" f"<div style='text-align: justify'>{generated_questions_and_contexts[selected_question][0]}</div>\n\n" "---", unsafe_allow_html=True)
 
         # Print the answer
         st.header("Answer")
-        st.markdown("---\n" f"<div style='text-align: justify'> {answers[selected_question]}</div>\n\n" "---", unsafe_allow_html=True)
+        st.markdown("---\n" f"<div style='text-align: justify'>{answers[selected_question]}</div>\n\n" "---", unsafe_allow_html=True)
 
         # Print the context corresponding to that answer
         st.header("Context")
-        st.markdown("---\n" f"<div style='text-align: justify'> {generated_questions_and_contexts[selected_question][1]}</div>\n\n" "---", unsafe_allow_html=True)
+        st.markdown("---\n" f"<div style='text-align: justify'>{generated_questions_and_contexts[selected_question][1]}</div>\n\n" "---", unsafe_allow_html=True)
