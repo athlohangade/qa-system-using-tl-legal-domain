@@ -40,18 +40,18 @@ def generate_answer_for_the_question(question, contexts) :
 
 
 # Print the title
-st.title("Question Answering system for Legal Documents")
+st.title("Question Answering System for Legal Documents")
 st.write("---")
 
 # Select the Mode of Operation
-st.header("Select the mode of operation :")
+st.header("Mode of Operation")
 modes = ['Generate and Answer Question on Document', 'Answer Question on Document']
 mode_of_operation = st.radio("", range(len(modes)), format_func = lambda x: modes[x])
 
 # If first mode is selected
 if mode_of_operation == 0 :
 
-    st.header("Select a Legal Document :")
+    st.header("Select a Legal Document")
     st.write(" ")
     # Get the legal acts titles
     legal_docs_names = os.listdir("./legal_docs/")
@@ -77,7 +77,7 @@ if mode_of_operation == 0 :
 
         # If user wants more samples, shuffle the contexts to skip the cached entries
         st.write(" ")
-        if st.button("Generate more samples") :
+        if st.button("More Samples") :
             random.shuffle(contexts)
 
         # Use the first 3 contexts of the list for generating questions and answers
@@ -88,28 +88,28 @@ if mode_of_operation == 0 :
             answers = get_answers_for_questions(generated_questions_and_contexts)
 
         # List the generated questions
-        st.header("Generated Questions :")
+        st.header("Generated Questions")
         st.write(" ")
         question_numbers = list(range(len(generated_questions_and_contexts)))
         selected_question = st.selectbox("", question_numbers, \
             format_func = lambda x: generated_questions_and_contexts[x][0])
 
         # Print the selected question
-        st.header("Question :")
-        st.markdown("---\n" f"{generated_questions_and_contexts[selected_question][0]}\n\n" "---")
+        st.header("Question")
+        st.markdown("---\n" f"<div style='text-align: justify'> {generated_questions_and_contexts[selected_question][0]}</div>\n\n" "---", unsafe_allow_html=True)
 
         # Print the answer
-        st.header("Answer :")
-        st.markdown("---\n" f"{answers[selected_question]}\n\n" "---")
+        st.header("Answer")
+        st.markdown("---\n" f"<div style='text-align: justify'> {answers[selected_question]}</div>\n\n" "---", unsafe_allow_html=True)
 
         # Print the context corresponding to that answer
-        st.header("Context :")
-        st.markdown("---\n" f"{generated_questions_and_contexts[selected_question][1]}\n\n" "---")
+        st.header("Context")
+        st.markdown("---\n" f"<div style='text-align: justify'> {generated_questions_and_contexts[selected_question][1]}</div>\n\n" "---", unsafe_allow_html=True)
 
 # If second mode is selected
 elif mode_of_operation == 1 :
 
-    st.header("Select a Legal Document :")
+    st.header("Select a Legal Document")
     st.write(" ")
     # Get the legal acts titles
     legal_docs_names = os.listdir("./legal_docs/")
@@ -130,7 +130,7 @@ elif mode_of_operation == 1 :
     if doc_name != "Select Act" :
 
         # UI widget to input the question from the user
-        st.header("Enter the Question :")
+        st.header("Enter the Question")
         question = st.text_area("")
 
         # Get the contexts from the selected document
@@ -139,38 +139,50 @@ elif mode_of_operation == 1 :
 
         # Find the answer to the user's question
         st.write(" ")
-        if st.button("Get the Answer") :
+        if st.button("Get Answer") :
 
             # Get the answer for the user inputted question and context list
             with st.spinner("Finding the Answer...") :
                 answer = generate_answer_for_the_question(question, contexts)
 
             # Print the answer
-            st.header("Answer :")
-            st.markdown("---\n" f"{answer}\n\n" "---")
+            st.header("Answer")
+            st.markdown("---\n" f"<div style='text-align: justify'> {answer[0]}</div>\n\n" "---", unsafe_allow_html=True)
+
+            # Print the context
+            st.header("Context")
+            st.markdown("---\n" f"<div style='text-align: justify'> {answer[1]}</div>\n\n" "---", unsafe_allow_html=True)
+
+            # Print the confidence value of the answer
+            st.header("Confidence value")
+            st.markdown("---\n" f"<div style='text-align: justify'> {answer[2]} %</div>\n\n" "---", unsafe_allow_html=True)
 
         # If more suggestions are expected, shuffle the contexts to skip the cached entries
         st.write(" ")
-        if st.button("More suggestions") :
+        if st.button("More Suggestions") :
             random.shuffle(contexts)
 
         # Use the first 3 contexts of the list for generating questions and answers
         contexts = contexts[:3]
-        with st.spinner("Finding some suggestions...") :
+        with st.spinner("Finding some Suggestions...") :
             generated_questions_and_contexts = generate_questions(contexts)
             answers = get_answers_for_questions(generated_questions_and_contexts)
 
         # Print the suggested questions
-        st.header("Some suggested questions :")
+        st.header("Suggested Pool of Questions")
         st.write(" ")
         question_numbers = list(range(len(generated_questions_and_contexts)))
         selected_question = st.selectbox("", question_numbers, \
             format_func = lambda x: generated_questions_and_contexts[x][0])
 
         # Print the selected question
-        st.header("Question :")
-        st.markdown("---\n" f"{generated_questions_and_contexts[selected_question][0]}\n\n" "---")
+        st.header("Question")
+        st.markdown("---\n" f"<div style='text-align: justify'> {generated_questions_and_contexts[selected_question][0]}</div>\n\n" "---", unsafe_allow_html=True)
 
         # Print the answer
-        st.header("Answer :")
-        st.markdown("---\n" f"{answers[selected_question]}\n\n" "---")
+        st.header("Answer")
+        st.markdown("---\n" f"<div style='text-align: justify'> {answers[selected_question]}</div>\n\n" "---", unsafe_allow_html=True)
+
+        # Print the context corresponding to that answer
+        st.header("Context")
+        st.markdown("---\n" f"<div style='text-align: justify'> {generated_questions_and_contexts[selected_question][1]}</div>\n\n" "---", unsafe_allow_html=True)
