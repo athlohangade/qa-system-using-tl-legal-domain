@@ -1,76 +1,63 @@
-#
-#-----------Question Answering Module-----------
-#
+#Importing ML Modules
 import torch
-# from transformers import BertModelForQuestionAnswering, BertTokenizer
+#Importing the QA BERT Class and BERT Tokenizer
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer
 
-
 class QA() :
-
     def __init__(self) :
         #Defining the model with the tokenizer
-        # self.model_file = "bert-large-uncased"
-        # self.model = BertModelForQuestionAnswering.from_pretrained(self.model_file)
-        # self.tokenizer = BertTokenizer.from_pretrained("bert-large-uncased")
-        self.model_file = "bert-large-uncased-whole-word-masking-finetuned-squad"
-        self.model = AutoModelForQuestionAnswering.from_pretrained(self.model_file)
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_file)
+        self.model_name = "bert-large-uncased-whole-word-masking-finetuned-squad"
+        self.model = AutoModelForQuestionAnswering.from_pretrained(self.model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
 
-    #Function to answer the question
-    def answer(self, questions, contexts) :
-        #Tokenize the question and context pair
-        #Encode the words into word embeddings / encodings
-        encodings = self.tokenizer(questions, contexts, padding=True)
+    def answer(self, question, context) :
+        #Tokenize the Question and the context
+        #Concatenate the question and and context and add the special tokens
+        #Encode the words into word embeddings
+        input_ids = (self.tokenizer).encode(question, context)
 
-        #processing the data to make it ready for the model
-        tokens = []
-        attention_masks = []
-        segment_ids = []
-        for input_id in encodings.input_ids:
-            #Handling inputs with length greater than 512
-            if(len(input_id)) > 512 :
-                continue
+        # If token sequence length is greater than 512
+        if len(input_ids) > 512 :
+            return ""
 
-            #generating the attention mask for each sequence
-            attention_masks.append([0 if (each == 0) else 1 for each in input_id])
+        #Converting the token_ids back to tokens to print the answer at the end
+        tokens = (self.tokenizer).convert_ids_to_tokens(input_ids)
 
-            #generating the token list from the token_ids for each input sequence
-            for each in self.tokenizer.convert_ids_to_tokens(input_id) :
-                tokens.append(each)
-    
-            #Creating the segment_id list to specify the segment embedding to be added to the word embedding
-            #A(0) segment - Question, B(1) segment - context
-            sep_index = input_id.index(self.tokenizer.sep_token_id)	          #separator token index
-            num_seg_a = sep_index + 1                 			              #Segment A
-            num_seg_b = len(input_id) - num_seg_a                         #Segment B
-            segment_ids.append(([0]*num_seg_a + [1]*num_seg_b))
+        #Creating the segment_id list to specify the segment embedding to be added to the word embedding
+        #A(0) segment - Question, B(1) segment - Answer Ref Text
+        sep_index = input_ids.index((self.tokenizer).sep_token_id)	#separator token index
+        num_seg_a = sep_index + 1                 			#Segment A
+        num_seg_b = len(input_ids) - num_seg_a    			#Segment B
+        segment_ids = [0]*num_seg_a + [1]*num_seg_b  
 
-        #Running the QA model for fetching the answers 
-        scores = self.model(torch.tensor(encodings.input_ids), token_type_ids=torch.tensor(segment_ids), attention_mask=torch.tensor(attention_masks));
-        #Finding the most probable start and end token for the answer
-        start_index = torch.argmax(scores.start_logits)
-        end_index = torch.argmax(scores.end_logits)
+        #Running the model on the given question and answer ref text, specifying the segment_ids alongside
+        #Fetching the start and end scores after taking dot product with the start and end vectors
+        scores = self.model(torch.tensor([input_ids]), token_type_ids=torch.tensor([segment_ids]))
+        start_scores = scores.start_logits
+        end_scores = scores.end_logits  
 
-        #If the start index is greater than the end index for the answer
-        if (start_index > end_index):
-            return ("<no answer>", -1, -1)
-          
-        #Processing the answer spanning from the start_index to the end_index
+        #Find the token index with the maximum start and end score by applying softmax activation (argmax function)
+        start_index = torch.argmax(start_scores)
+        end_index = torch.argmax(end_scores)
+
+        #If the start index is more than the end index
+        if(start_index > end_index) :
+            return "(Answer Not Found)"
+
+        #Processing the subword characters added by BERT to get a well organised answer
         answer = tokens[start_index]
-        for i in range(start_index + 1, end_index + 1) :
+        for i in range(start_index + 1, end_index + 1):
             #subword token is added to the previous token to complete a word
             if tokens[i][0:2] == '##':
                 answer += tokens[i][2:]
-            #else add the token directly to the answer with a whitespace
-            else: 
+
+                #else add the token directly to the answer with a whitespace
+            else:
                 answer += ' ' + tokens[i]
 
-        #If BERT sends the CLS token as result, then no answer was found by the model
-        if answer[:5] == "[CLS]":
-            return ("<no answer>", -1, -1)
+        # If the answer is not found
+        if answer[:5] == "[CLS]" :
+            answer = "(Answer Not Found!)"
 
-        #Returning the final answer
-        span_start = encodings.token_to_chars(start_index)
-        span_end = encodings.token_to_chars(end_index)
-        return (answer, span_start.start, span_end.end)
+        #returning the answer
+        return answer

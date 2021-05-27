@@ -11,7 +11,6 @@ class QA() :
 
     def __init__(self) :
         #Defining the model with the tokenizer
-        #self.model_file = "bert-large-uncased-whole-word-masking-finetuned-squad"
         self.model_file = "atharvamundada99/bert-large-question-answering-finetuned-legal"
         self.model = AutoModelForQuestionAnswering.from_pretrained(self.model_file)
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_file)
@@ -110,11 +109,16 @@ class QA() :
                   
             #Finding the best answer for the batch
             if len(valid_answers) > 0:
+                best_answer = dict()
                 best_answer = sorted(valid_answers, key=lambda x: x["score"], reverse=True)[0]
+                best_answer["context"] = context
+                best_answer["score"] = best_answer["score"].numpy()
+                if (best_answer["score"] < 8.0) :
+                    best_answer = {"text": "<no_answer>", "score": -1, "context": ""}
             #In the very rare edge case there may not be a single non-null prediction,
             #hence, we create a fake prediction to avoid failure.
             else:
-                best_answer = {"text": "<no_answer>", "score": 0.0}
+                best_answer = {"text": "<no_answer>", "score": 0.0, "context": ""}
             best_answers.append(best_answer)
 
         #Returning the best batch of answers            
@@ -142,5 +146,17 @@ class QA() :
             best_anss = best_anss + result
 
         #Finding the best answer among all the best batch answers
-        answer = sorted(best_anss, key=lambda x: x["score"], reverse=True)[0]["text"]
-        return answer
+        answer = sorted(best_anss, key=lambda x: x["score"], reverse=True)[0]
+
+        #Calculating the confidence value of the answer based on the final score of the answer
+        if (answer["score"] < 8.0) :
+            confidence_score = 0
+        elif (answer["score"] > 15) :
+            confidence_score = 100
+        elif (answer["score"] >= 8.0 and answer["score"] < 10.0) :
+            confidence_score = (answer["score"]-8.0)*15 + 20
+        else :
+            confidence_score = (answer["score"]-10.0)*10 + 50
+
+        #Returning the final answer -> text, context and the confidence score of the answer
+        return (answer["text"], answer["context"], confidence_score)
