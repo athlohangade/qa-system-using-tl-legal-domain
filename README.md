@@ -6,7 +6,7 @@ Question Answer System (QAS) is one of the key tasks of Natural Language Process
 
 This repo is about implementing a closed domain QAS for Legal Documents, particularly Legal Acts, following a Transfer Learning approach. The Legal Acts amended by the Indian Constitution and Judiciary, used for this project is available [here](https://www.indiacode.nic.in/).
 
-## System Desgin
+## System Design
 
 The system has three components: Preprocessing and Context Creation, Question Generation (QG) and Question Answering.
 
